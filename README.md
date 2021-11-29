@@ -1,3 +1,3 @@
 # custom-compiler
-Uses regex and yacc to parse a toy language to MIPS32
+Uses regex and yacc to parse a toy language to MIPS32.
 Takes input from a C-like statically typed language mC, which can declare integer, character, or array variables of both local and global scope. It can also handle complex operations through an abstract syntax tree (AST). The compiler scans the code and creates tokens using regular expressions in Lex before creating the AST with aYacc parser. The program goes through the created AST to compile the code into an Mips assembly program. If the code has syntax errors, the AST will detect it and send error information to the console instead of compiling.
